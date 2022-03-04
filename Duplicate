@@ -1,0 +1,14 @@
+l=[]
+s=[]
+n=int(input('Enter the n value :'))
+print('Enter the list elements :')
+for i in range(n):
+    e=int(input())
+    l.append(e)
+print('Duplicate elements in list :')
+for i in l:
+    x=l.count(i)
+    if x>1:
+        if s.count(i)==0:
+            s.append(i)
+print(s)
